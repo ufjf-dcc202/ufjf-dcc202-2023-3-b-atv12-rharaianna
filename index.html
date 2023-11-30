@@ -18,9 +18,28 @@
         <p>Esta é a página principal que usa JavaScript para adicionar iteração.</p>
         <section>
             <form name ="entrada">
-                <input name="quantidade" value="5">
-                <input name="fruta" value="melancias">
-                <input type="submit" name="enviar">
+                <input type="number" name="quantidade" value="5" min="0" max="12">
+                
+                <fieldset>
+                    <legend>Origem</legend>
+                    <label>
+                        <input type="radio" name="origem" value="Maria" checked/>
+                        Maria
+                    </label>
+                    <label>
+                        <input type="radio" name="origem" value="Joao">
+                        Joao
+                    </label>
+                </fieldset>
+
+                <select name="fruta" value="Melancias">
+                    <option value="maca">Maçã</option>
+                    <option value="banana">Banana</option>s
+                    <option value="mexerica">Mexerica</option>
+                </select>
+
+                <button type="submit" name="enviar">Enviar</button>
+
             </form>
         </section>
         <section>
